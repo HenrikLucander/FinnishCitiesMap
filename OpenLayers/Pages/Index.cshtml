@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script src="https://kit.fontawesome.com/7b5fbd82aa.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="~/lib/v6.9.0-dist/ol.css" />
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<div class="grid-container">
+    <div class="grid-1">
+        <div class="column-navigation">
+            <a title="Home" id="Home" class="active"><i class="fas fa-home" id="Home"></i></a>
+            <a title="Helsinki" id="Helsinki"><i class="fas fa-circle" id="Helsinki"></i></a>
+            <a title="Turku" id="Turku"><i class="fas fa-circle" id="Turku"></i></a>
+            <a title="Keuruu" id="Keuruu"><i class="fas fa-circle" id="Keuruu"></i></a>
+            <a title="Rovaniemi" id="Rovaniemi"><i class="fas fa-circle" id="Rovaniemi"></i></a>
+            <a title="Maarianhamina" id="Maarianhamina"><i class="fas fa-circle" id="Maarianhamina"></i></a>
+        </div>
+    </div>
+    <div class="grid-2">
+        <div id="openlayers-map" class="column-map"></div>
+    </div>
+    <div class="grid-3">
+        <div class="column-menu" id="menu-information">
+                <p id="cityname">Welcome to Finnish Cities Map</p>
+                <img id="cityimage" src="~/img/Finland.jpg" alt="Finland" />         
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/7b5fbd82aa.js" crossorigin="anonymous"></script>
+<script src="~/lib/v6.9.0-dist/ol.js"></script>
+<script src="~/js/main.js"></script>
+
