@@ -145,9 +145,12 @@ body {
 }
 
 #cityimage {
-    max-width: 100%;
+    max-width: 80%;
+    margin-left: 10%;
     border-radius: 10px;
     padding: 10px;
+    width: auto;
+    height: auto;
 }
 
 #popover-text {
@@ -161,7 +164,7 @@ body {
     }
 
     #cityimage {
-        height: 40%;
+
     }
 }
 
@@ -192,6 +195,6 @@ body {
     #cityimage {
         display: block;
         margin: auto;
-        height: 40%;
+        max-height: 40%;
     }
 }
